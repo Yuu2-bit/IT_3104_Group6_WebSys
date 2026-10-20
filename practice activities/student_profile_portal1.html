@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        aside{
+            width: 200px;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            float: left;
+        }
+
+        .tag{
+            display:inline-block;
+            border:1px solid green;
+            color: green;
+             padding:.05em .55em;
+            border-radius:3px;
+            font-size:.85em;
+            font-weight:600;
+        }
+
+        #contactfield{
+            margin-left: 240px;
+        }
+
+        #profilefield{
+            margin-top: 18px;
+        }
+        
+    </style>
+    
+  
+</head>
+<body>
+    <header>
+        <h1>Student Profile Portal</h1>
+        <p>A single dashboard for my academic profile, semester record.</p>
+    </header>
+<hr>
+    <div class="layout">
+    <nav class="Main navigation">
+        
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#grades">Grades</a>
+        <a href="#contact">Contact</a>
+          
+    </nav>
+
+    <br><hr>
+
+    <aside id="home">
+        <h2>Profile</h2>
+        <dl>
+            <dt><b>Name</b></dt>
+            <dt>Brent Jeric Factor</dt>
+            <br>
+            <dt><b>Program</b></dt>
+            <dt>BS Information Technology</dt>
+            <br>
+            <dt><b>Year</b></dt>
+            <dt>3nd Year</dt>
+            <br>
+            <dt><b>Status</b></dt>
+            <dt><span class="tag">Regular</span></dt>
+        </dl>
+    </aside>
+
+    <main>
+        <fieldset id="profilefield">
+             <section id="profile">
+            <h2>About Me</h2>
+            <p>Hi, I'm <b>Brent Jeric Factor</b>, <i>20 years old</i> and a third-year IT student studying at Batangas State University - Alangilan Campus
+            who enjoys playing online games and practicing building small web projects on weekends. My friends usually describe me as <strong>hardworking.</strong> </p>
+            <hr>
+            
+            <figure>
+                <img src="cics.jpg" alt="Picture of the CICS building">
+                <figcaption>A quick sketch of the main academic building, where most of my IT classes are held.</figcaption>
+            </figure>
+            </section>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+        <section id="grades">
+            <h2>Academic Record</h2>
+            <table border="1">
+            <tr>
+                <th>Student</th>
+                <th>Code</th>
+                <th>Subject</th>
+                <th>Credits</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td rowspan="8">Brent Jeric Factor</td>
+                <td>IT 222</td>
+                <td>Advance Database Managent System</td>
+                <td>3</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>IT 223</td>
+                <td>Computer Networking 2</td>
+                <td>3</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>MATH 408</td>
+                <td>Data Analysis</td>
+                <td>3</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>ES 101</td>
+                <td>Environmental Sciences</td>
+                <td>3</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>IT 221</td>
+                <td>Information Management</td>
+                <td>3</td>
+                <td>1.25</td>
+            </tr>
+            <tr>
+                <td>GEd 106</td>
+                <td>Purposive Communication</td>
+                <td>3</td>
+                <td>1.25</td>
+            </tr>
+            <tr>
+                <td>PATHFit 4</td>
+                <td>Team Sports (Basketball and Volleyball)</td>
+                <td>2</td>
+                <td>1.00</td>
+            </tr>
+            <tr>
+                <td>GEd 101</td>
+                <td>Understanding the Self</td>
+                <td>3</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total Units / General Weighted Average</td>
+                <td>8</td>
+                <td>1.39</td>
+            </tr>
+            </table>
+        </fieldset>
+        </section>
+       
+        <br>
+
+        <fieldset id="contactfield">
+        <section id="contact">
+            <form>
+                <h2>Registration / Feedback Form</h2>
+                <fieldset>
+                <label for="fullname">Fullname: </label>
+                <input type="text" name="fullname" id="fullname" placeholder="Juan Dela Cruz">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="JuanDCruz@schoo.edu.ph">
+                 <label for="contactnum">Contact#: </label>
+                <input type="contactnum" name="contactnum" id="contactnum" placeholder="09*********">
+                </fieldset>
+            </form>
+
+            <br>
+
+            <form>
+                <fieldset>
+                    <label for="track">Track:</label>
+                    <select name="track" id="track">
+                        <optgroup label="Information Technology">
+                            <option value="ITtrack1">IT_Track1</option>
+                            <option value="ITtrack2">IT_Track2</option>
+                        </optgroup>
+                        <optgroup label="Computer Science">
+                            <option value="CStrack1">CS_Track1</option>
+                            <option value="CStrack2">CS_Track2</option>
+                        </optgroup>
+                    </select>
+                    <label for="proglanguage">Programming Language:</label>
+                    <input list="language-opts" id="proglanguage" name="proglanguage">
+                    <datalist id="language-opts">
+                        <option>C++</option>
+                        <option>Python</option>
+                        <option>Java</option>
+                        <option>JavaScript</option>
+                        <option>PHP</option>
+                    </datalist>
+                </fieldset>
+                
+                <br>
+
+                <fieldset>
+                    <legend for="electives">Electives Choices (select zero or more)</legend>
+                    <input type="checkbox" id="choice1" name="choice1" value="ux/uidesign">
+                    <label for="choice1">UI/UX Design</label>
+                    <input type="checkbox" id="choice2" name="choice2" value="cloudcomputing">
+                    <label for="choice2">Cloud Computing</label>
+                    <input type="checkbox" id="choice3" name="choice3" value="introtoai">
+                    <label for="choice3">Intro to AI</label>
+                    <input type="checkbox" id="choice4" name="choice4" value="gamedev">
+                    <label for="choice4">Game Development</label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <label for="file">File Upload: </label>
+                    <input type="file" name="file" id="file">
+                </fieldset>
+
+                <br>
+                <br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+        </fieldset>
+        
+    </main>
+    </div> 
+</body>
+</html>
