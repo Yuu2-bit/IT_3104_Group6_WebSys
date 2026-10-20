@@ -1,0 +1,378 @@
+/* General Page Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f3f6fb;
+    color: #263445;
+    line-height: 1.6;
+    padding: 25px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(#102a43, #1d4e89);
+    color: white;
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(16, 42, 67, 0.12);
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    color: #d9e7f5;
+    font-size: 15px;
+}
+
+/* Navigation Bar */
+nav.Main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+nav.Main a {
+    text-decoration: none;
+    color: #294b70;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav.Main a:hover {
+    background-color: #1d4e89;
+    color: white;
+}
+
+/* Main Layout */
+.layout {
+    width: 100%;
+}
+
+/* Profile Sidebar */
+aside {
+    float: left;
+    width: 260px;
+    background-color: white;
+    padding: 25px;
+    margin: 0 25px 25px 0;
+    border: 1px solid #e0e7ef;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+aside h2 {
+    color: #163b65;
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #dce8f5;
+}
+
+aside dl dt {
+    margin-bottom: 5px;
+}
+
+aside dl dt b {
+    color: #526579;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+aside dl dt + dt {
+    color: #263445;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+aside dl br {
+    display: block;
+    content: "";
+    margin-bottom: 15px;
+}
+
+/* Student Status Tag */
+.tag {
+    display: inline-block;
+    background-color: #e5f7ed;
+    color: #167447;
+    border: 1px solid #a8dfbf;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Main Content */
+main {
+    min-width: 0;
+}
+
+fieldset {
+    min-width: 0;
+    background-color: white;
+    border: 1px solid #e0e7ef;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+section h2 {
+    color: #163b65;
+    font-size: 23px;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e8eef5;
+}
+
+section p {
+    margin-bottom: 20px;
+    color: #526579;
+    text-align: justify;
+}
+
+/* Profile Image */
+figure {
+    margin-top: 20px;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    margin: 0 auto 12px;
+    border-radius: 10px;
+    border: 1px solid #e0e7ef;
+}
+
+figcaption {
+    color: #718096;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* Academic Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #163b65;
+    color: white;
+    padding: 14px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+table td {
+    padding: 12px;
+    border: 1px solid #e0e7ef;
+}
+
+table th,
+table td {
+    overflow-wrap: anywhere;
+}
+
+table tr:nth-child(even) {
+    background-color: #f5f8fc;
+}
+
+table tr:hover {
+    background-color: #eaf2fb;
+}
+
+table tr:last-child {
+    font-weight: 700;
+    background-color: #e3edf9;
+    color: #163b65;
+}
+
+/* Contact and Registration Form */
+#contactfield {
+    clear: both;
+    margin-left: 0;
+}
+
+#profilefield {
+    margin-top: 0;
+}
+
+form fieldset {
+    background-color: #f9fbfe;
+    border: 1px solid #dce5ef;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+
+form label {
+    display: inline-block;
+    color: #344b63;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="contactnum"],
+input[list],
+select {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background-color: white;
+    color: #263445;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #1d4e89;
+    box-shadow: 0 0 0 3px rgba(29, 78, 137, 0.12);
+}
+
+/* Checkboxes and File Upload */
+input[type="checkbox"] {
+    accent-color: #1d4e89;
+    margin: 10px 5px 10px 0;
+}
+
+input[type="file"] {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #b7c7d9;
+    border-radius: 7px;
+    background-color: white;
+    font-family: inherit;
+}
+
+legend {
+    padding: 0 8px;
+    color: #163b65;
+    font-weight: 700;
+}
+
+/* Buttons */
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1d4e89;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5px 8px 5px 0;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #102a43;
+    transform: translateY(-1px);
+}
+
+button[type="reset"] {
+    background-color: #e8edf3;
+    color: #344b63;
+}
+
+button[type="reset"]:hover {
+    background-color: #d5dee8;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    aside {
+        float: none;
+        width: 100%;
+        margin: 0 0 25px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    table th,
+    table td {
+        padding: 8px 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header {
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav.Main {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    nav.Main a {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: normal;
+    }
+
+    table th,
+    table td {
+        min-width: 75px;
+    }
+
+    button {
+        width: 100%;
+        margin-right: 0;
+    }
+}
